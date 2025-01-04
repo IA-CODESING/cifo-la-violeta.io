@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags -->
+    <meta name="description" content="Homework Development">
+    <meta name="keywords" content="HTML, CSS, Task, Homework">
+    <meta name="author" content="Irvin Aguilar">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/icons/apple-touch-icon.png">
+    <!-- Style Sheets General-->
+    <link rel="preload" href="../css/stylesGeneral.css" as="stylesheet">
+    <link rel="stylesheet" href="../css/stylesGeneral.css">
+    <title>Servicios</title>
+</head>
+<body class="contaier__general">
+    <!-- contendor de la img background -->
+    <div class="img__header">
+    </div>
+    
+    <!-- Incia Header y Barra de navegacion -->
+    <header class="header">
+
+        <!-- Checkbox para controlar el menú (toogle)-->
+        <input type="checkbox" id="nav-toggle" class="nav__toggle">
+        <label for="nav-toggle" class="nav__toggle-label">&#9776;</label>
+        
+        
+        <!-- Menú -->
+        <nav class="container__nav">
+            <ul class="nav__list">
+                <li class="nav__options"><a class="nav__links" href="/index.html">Presentación</a></li>
+                <li class="nav__options"><a class="nav__links active" href="../html/service.html">Servicios</a></li>
+                <li class="nav__options"><a class="nav__links" href="../html/products.html">Productos</a></li>
+                <li class="nav__options"><a class="nav__links" href="../html/office.html">Oficinas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Inicia Main/Contenido -->
+    <main id="home" class="main__container">
+        <!-- Maint content -->
+        <div class="main__container--video">
+            <section class="article__container">
+                <article class="articles__text">
+                    <h1>servicios</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam corrupti incidunt repudiandae beatae, rem animi quos reprehenderit, nesciunt exercitationem quae quibusdam eum libero a cupiditate eligendi, laborum minima modi nobis!
+                    Rerum, error? Aperiam animi ducimus deleniti tenetur quisquam dolore similique laborum soluta? Dicta voluptates fuga nulla sed repudiandae, dolor ad esse quasi ex delectus similique, cupiditate illum nemo sit aliquid!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, itaque fugiat recusandae, aliquid delectus labore nam aut facilis tenetur veritatis, autem harum voluptates at animi consequatur. Aliquam reprehenderit sapiente inventore?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, sed ullam dignissimos facere laudantium ut ducimus, aspernatur similique possimus odit excepturi at ipsum. Voluptates ut eius recusandae minima eligendi deserunt.
+                    Placeat, corrupti repellat. Explicabo odit saepe tempore quis perspiciatis dolorum quaerat, natus, alias corrupti labore, enim voluptate quam. Molestias deleniti animi magnam reiciendis rem incidunt assumenda dignissimos recusandae neque corporis.</p>
+                    <div class="video__container">
+                        <video src="../assets/media/videos/agencias_Thomas_Cook.mp4" type="video/mp4" controls autoplay muted>
+                        </video>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <!-- contact section -->
+        <div class="main__sections">
+            <!-- Container external Links-->
+            <div class="container__external--links">
+                <a class="external__link--container" href="https://www.facebook.com/">
+                    <img src="../assets/media/img/facebook-logo-button.png" alt="">
+                </a>
+                <a class="external__link--container" href="https://api.whatsapp.com/send/?phone=+34608123123">
+                    <img src="../assets/media/img/whatsapp.png" alt="">
+                </a>
+                <a class="external__link--container" href="https://maps.app.goo.gl/PerbvvPYm9jjy8yK9">
+                    <img src="../assets/media/img/location-point.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- container contact form -->
+        <div class="main__sections">
+            <form class="container__form" action="https://formsubmit.co/freddyaguilar.tecnocasa@gmail.com" method="POST">
+                    <!-- email container -->
+                    <div class="container__labels container__email">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            name="email"
+                            id="correo" 
+                            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA{2,9}" 
+                            required
+                            placeholder="tuemail@mail.com">
+                    </div>
+                    <!-- Telephone container -->
+                    <div class="container__labels container__phone">
+                        <label for="telefono">Teléfono</label>
+                            <input 
+                                type="text" 
+                                name="telefono" 
+                                id="telefono"
+                                pattern="\d{9,11}"
+                                placeholder="900 000 000"
+                                required>
+                    </div>
+                    <!-- Container Comments -->
+                    <div class="container__labels container__coments">
+                        <label for="comentarios">Envianos tus comentarios</label>            
+                            <textarea name="comentarios" id="comentarios" required placeholder="Lo quiero todo, todo y todo"></textarea>
+                            <p class="footer__form">Todos los datos de este formulario son obligatorios</p>
+                    </div>
+                    <!-- container buttons -->
+                    <div class="container__btns">
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">       
+                    </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer__container">
+
+    
+        <!-- Footer -->
+        <div class="footer__content">
+            <div class="footer__enlaces">
+                <a href="https://g.co/kgs/FXSTW45"> Calle desierta, 102020 Michigan </a>
+                <a href="tel:+34930123123">Tel. +34 930123123 </a>
+                <a href="mailto:info.chorizos@moncloa.com?Subject=Información%20sobre%20vuestros%20servicios%20Web”">email: chorizos@moncloa.com </a>
+                <a href="#"> yomismo.com &copy; </a> 
+            </div>
+            <div class="footer__entitie">
+                <a href="#home">&#11145;</a>
+            </div>
+        </div>
+        <div class="img__footer">
+        </div>
+    </footer>
+</body>
+</html>
